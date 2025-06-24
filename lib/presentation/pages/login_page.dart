@@ -64,14 +64,14 @@ class _MobileLoginView extends StatelessWidget {
               const SizedBox(height: 40),
               const LoginForm(),
               const SizedBox(height: 20),
-              BlocBuilder<AuthenticationBloc, AuthenticationState>(
-                builder: (context, state) {
-                  if (state is AuthenticationLoading) {
-                    return const CircularProgressIndicator();
-                  }
-                  return Container();
-                },
-              ),
+              // BlocBuilder<AuthenticationBloc, AuthenticationState>(
+              //   builder: (context, state) {
+              //     if (state is AuthenticationLoading) {
+              //       return const CircularProgressIndicator();
+              //     }
+              //     return Container();
+              //   },
+              // ),
             ],
           ),
         ),
@@ -120,14 +120,14 @@ class _WebLoginView extends StatelessWidget {
               const SizedBox(height: 50),
               const LoginForm(),
               const SizedBox(height: 30),
-              BlocBuilder<AuthenticationBloc, AuthenticationState>(
-                builder: (context, state) {
-                  if (state is AuthenticationLoading) {
-                    return const CircularProgressIndicator();
-                  }
-                  return Container();
-                },
-              ),
+              // BlocBuilder<AuthenticationBloc, AuthenticationState>(
+              //   builder: (context, state) {
+              //     if (state is AuthenticationLoading) {
+              //       return const CircularProgressIndicator();
+              //     }
+              //     return Container();
+              //   },
+              // ),
             ],
           ),
         ),
